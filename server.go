@@ -6,7 +6,8 @@ import (
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
-    fmt.Printf("Just about to send output\n")
+    s := r.URL.Path[1:]
+    fmt.Printf("Just about to send output -[%v]\n", s)
     fmt.Fprintf(w, "Hi there, I love %s!", r.URL.Path[1:])
 }
 
