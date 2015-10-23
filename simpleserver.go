@@ -16,7 +16,7 @@ func noun(n int) string {
 	if n == 1 {
 		return "bottle"
 	}
-	return "bottles"
+	return "bottlez"
 }
 
 func nobottles() string {
